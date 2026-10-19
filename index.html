@@ -1166,7 +1166,7 @@ $('notesBtn').addEventListener('click',()=>show('notesSection'));
 document.querySelectorAll('.sticky').forEach(btn=>btn.addEventListener('click',()=>{const i=Number(btn.dataset.sticky),note=PERSONALIZACION.notas[i];if(!openedNotes.has(i)){openedNotes.add(i);btn.style.outline='2px solid #e85b75';btn.style.outlineOffset='2px'}$('stickyBox').innerHTML='<div class="note"><div class="note-tag"></div><p></p></div>';$('stickyBox').querySelector('.note-tag').textContent=note[0];$('stickyBox').querySelector('p').textContent=note[1];burst(4,['✨','🌷','🐞']);if(openedNotes.size===3){$('finalBtn').classList.remove('hidden');toast('Abriste todas las notitas 💌')}}));
 
 $('finalBtn').addEventListener('click',()=>{show('finalSection');burst(10,['🐞','✨','🌷','✧'])});
-$('confettiBtn').addEventListener('click',()=>{burst(24,['✨','🐞','🌷','⭐','✧']);$('lastWish').classList.remove('hidden');$('confettiBtn').textContent='¡Poder de Ladybug activado! 🐞';toast('¡ES HORA DE ACABAR CON A MALDAAAD! 🐞')});
+$('confettiBtn').addEventListener('click',()=>{burst(24,['✨','🐞','🌷','⭐','✧']);$('lastWish').classList.remove('hidden');$('confettiBtn').textContent='¡Poder de Ladybug activado! 🐞';toast('¡ES HORA DE ACABAR CON LA MALDAAAD! 🐞')});
 
 // Poner todos los textos personalizables en la página desde el bloque de arriba.
 document.querySelector('.hero>p').textContent=PERSONALIZACION.intro;
